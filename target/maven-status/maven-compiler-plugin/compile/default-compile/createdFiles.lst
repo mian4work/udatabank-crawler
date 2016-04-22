@@ -1,0 +1,6 @@
+com/udatabank/init/UdatabankConfiguration.class
+com/udatabank/crawler/UdatabankCrawler.class
+com/udatabank/crawler/UdatabankCrawlerController.class
+com/udatabank/controllers/CrawlerDemoController.class
+com/udatabank/database/MemoryDatabase.class
+com/udatabank/init/UdatabankInitializer.class
