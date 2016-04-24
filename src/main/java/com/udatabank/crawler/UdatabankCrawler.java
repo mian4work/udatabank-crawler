@@ -15,7 +15,7 @@ public class UdatabankCrawler extends WebCrawler{
 
         String href = webURL.getURL().toLowerCase();
 
-        return href.contains("http://www.udatabank.com/");
+        return href.contains("udatabank");
     }
 
     @Override

@@ -21,13 +21,15 @@ public class UdatabankCrawlerController {
         config.setMaxPagesToFetch(1000);
         config.setIncludeHttpsPages(false);
         config.setResumableCrawling(false);
+        config.setCrawlStorageFolder(".");
+        config.setMaxDepthOfCrawling(2);
 
         PageFetcher pageFetcher = new PageFetcher(config);
         RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
         RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
         CrawlController controller = new CrawlController(config, pageFetcher, robotstxtServer);
 
-        controller.addSeed("http://http://www.udatabank.com/");
+        controller.addSeed("http://www.udatabank.com/");
 
         controller.start(UdatabankCrawler.class, 5);
     }

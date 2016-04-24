@@ -10,12 +10,12 @@ public class UdatabankInitializer extends AbstractAnnotationConfigDispatcherServ
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class[] { UdatabankConfiguration.class };
+        return new Class<?>[] { UdatabankConfiguration.class };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return null;
+        return new Class<?>[] { UdatabankConfiguration.class };
     }
 
     @Override

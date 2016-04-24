@@ -18,7 +18,7 @@ public class CrawlerDemoController {
     @Autowired
     UdatabankCrawlerController controller;
 
-    @RequestMapping(value = "/home", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getLinks(ModelMap model) throws Exception {
 
         controller.start();

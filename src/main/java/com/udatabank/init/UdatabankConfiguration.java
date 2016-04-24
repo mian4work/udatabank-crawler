@@ -13,7 +13,7 @@ import org.springframework.web.servlet.view.JstlView;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.udatabank.crawler")
+@ComponentScan(basePackages = "com.udatabank")
 public class UdatabankConfiguration {
 
     @Bean
