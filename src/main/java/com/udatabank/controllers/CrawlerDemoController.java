@@ -8,6 +8,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import java.io.*;
+
 /**
  * Created by miazhang on 4/21/16.
  */
@@ -18,11 +20,19 @@ public class CrawlerDemoController {
     @Autowired
     UdatabankCrawlerController controller;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String getLinks(ModelMap model) throws Exception {
+    @RequestMapping(value = "/start", method = RequestMethod.GET)
+    public String start() throws Exception {
 
         controller.start();
-        model.addAttribute("links", MemoryDatabase.getLinks());
+
+        return "start";
+    }
+
+    @RequestMapping(value = "/links", method = RequestMethod.GET)
+    public String getLinks() {
+
         return "links";
     }
+
+
 }

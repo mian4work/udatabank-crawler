@@ -14,3 +14,11 @@ frontier/**
 .idea/misc.xml
 
 .idea/workspace.xml
+
+target/classes/com/udatabank/controllers/CrawlerDemoController.class
+
+*.class
+
+target/classes/com/udatabank/controllers/CrawlerDemoController.class
+
+*.class
