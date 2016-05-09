@@ -15,13 +15,15 @@ public class UdatabankCrawler extends WebCrawler{
 
         String href = webURL.getURL().toLowerCase();
 
-        return href.contains("udatabank");
+//        return href.contains("udatabank");
+        return true;
     }
 
     @Override
     public void visit(Page page) {
 
         final String url = page.getWebURL().getURL();
+        System.out.println(url);
 
         MemoryDatabase.saveLink(url);
     }

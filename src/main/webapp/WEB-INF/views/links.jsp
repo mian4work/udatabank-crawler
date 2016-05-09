@@ -8,6 +8,12 @@
     <title>Crawler Links</title>
 </head>
 <body>
-
+    <h2>Crawler Links</h2>
+    <br/>
+    <c:forEach items="${links}" var="link" varStatus="loop">
+    <tr>
+        <td>Link ${loop.index}: <c:out value="${link}"/></td>
+    </tr>
+</c:forEach>
 </body>
 </html>

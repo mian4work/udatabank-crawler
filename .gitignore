@@ -8,3 +8,9 @@ frontier/**
 *.class
 
 *.jar
+
+*.class
+
+.idea/misc.xml
+
+.idea/workspace.xml
