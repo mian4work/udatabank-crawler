@@ -13,7 +13,7 @@ public class JsonRetriever {
     public static String getJson() throws Exception {
 
         final URL url = new URL(SZ_JSON_ENDPOINT);
-        final Scanner scanner = new Scanner(url.openStream(), "UTF-8");
+        final Scanner scanner = new Scanner(url.openStream(), "GB2312");
 
         final StringBuilder builder = new StringBuilder();
 
