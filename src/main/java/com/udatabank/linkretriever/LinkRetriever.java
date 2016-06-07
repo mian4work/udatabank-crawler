@@ -34,7 +34,7 @@ public class LinkRetriever {
             }
         }
         catch (Exception ex) {
-
+            ex.printStackTrace();
         }
     }
 }
