@@ -25,6 +25,12 @@ public class LinkRetriever {
 
             String[][] announcements = LinkRetriever.getAnnouncements();
 
+             for (int row = 0; row < announcements.length; row++) {
+                for (int col = 0; col < announcements[row].length; col++) {
+                    System.out.println(announcements[row][col]);
+                }
+            }
+
 //            for(CompanyAnnouncement announcement : announcements) {
 //
 //                System.out.println(announcement.getTitle());
