@@ -20,4 +20,21 @@ public class LinkRetriever {
 
         return announcements;
     }
+
+    public static void main(String[] args) {
+
+        try {
+
+            List<CompanyAnnouncement> announcements = LinkRetriever.getAnnouncements();
+
+            for(CompanyAnnouncement announcement : announcements) {
+
+                System.out.println(announcement.getTitle());
+                System.out.println(announcement.getUrl());
+            }
+        }
+        catch (Exception ex) {
+
+        }
+    }
 }
