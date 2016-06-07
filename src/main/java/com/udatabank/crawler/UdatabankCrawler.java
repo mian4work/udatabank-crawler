@@ -49,7 +49,7 @@ public class UdatabankCrawler extends WebCrawler {
         final String url = page.getWebURL().getURL();
 
         try {
-            writer.write("<tr><a href=" + url + "\">" + url + "</a>" + "</tr><br/>");
+            writer.write("<tr><a href='" + url + "'>" + url + "</a>" + "</tr><br/>");
         }
         catch (Exception ex) {
 

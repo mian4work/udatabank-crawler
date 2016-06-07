@@ -1,4 +1,4 @@
-package com.udatabank.crawler.linkretriever;
+package com.udatabank.linkretriever;
 
 import java.net.URL;
 import java.util.Scanner;
