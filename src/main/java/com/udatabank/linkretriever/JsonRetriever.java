@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class JsonRetriever {
 
-    private static final String SZ_JSON_ENDPOINT = "http://disclosure.szse.cn/disclosure/fulltext/plate/szlatest_24h.js?ver=201606070925";
+    private static final String SZ_JSON_ENDPOINT = "http://disclosure.szse.cn/disclosure/fulltext/plate/szlatest_24h.js";
 
     public static String getJson() throws Exception {
 
