@@ -1,4 +1,4 @@
-package com.udatabank.linkretriever;
+package com.udatabank.linkretriever.sz;
 
 
 import com.google.gson.Gson;

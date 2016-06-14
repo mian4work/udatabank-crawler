@@ -1,4 +1,4 @@
-package com.udatabank.linkretriever;
+package com.udatabank.linkretriever.sz;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
