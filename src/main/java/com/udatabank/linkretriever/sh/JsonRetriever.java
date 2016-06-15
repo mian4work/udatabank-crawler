@@ -17,6 +17,9 @@ public class JsonRetriever {
     private static final String SH_HEADER = "Referer";
     private static final String SH_HEADER_CONTENT = "http://2016.sse.com.cn/disclosure/listedinfo/announcement/";
     private static final String DATE_FORMAT = "yyyy-MM-dd";
+    //TODO: shanghai announcement is paginated. That means you need to append the following to the end of endpoint
+    //TODO: &pageHelp.pageSize=25&pageHelp.pageCount=50&pageHelp.pageNo=1&pageHelp.beginPage=1
+    //TODO: the pageSize, pageNo and beginPage can be set. But the pageCount is from server side, so just set it to a guessed number.
 
     public static String getJson() throws Exception {
 
