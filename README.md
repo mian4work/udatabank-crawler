@@ -15,4 +15,4 @@ the udatabank crawler demo project
   from browser:
 
     http://localhost:8080/start (you can see all crawling process from your console)
-    http://localhost:8080/links (view result)
+    http://localhost:8080/links (once the crawling is done. you can view the results)
