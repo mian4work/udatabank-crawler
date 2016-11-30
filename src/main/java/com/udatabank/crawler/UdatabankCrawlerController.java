@@ -29,8 +29,7 @@ public class UdatabankCrawlerController {
         RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
         CrawlController controller = new CrawlController(config, pageFetcher, robotstxtServer);
 
-//        controller.addSeed("http://www.udatabank.com/");
-        controller.addSeed("http://news.163.com/special/indepthreport/");
+        controller.addSeed("http://www.hexun.com/");
 
         controller.start(UdatabankCrawler.class, 5);
     }
