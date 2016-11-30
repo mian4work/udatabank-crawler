@@ -16,3 +16,8 @@ the udatabank crawler demo project
 
     http://localhost:8080/start (you can see all crawling process from your console)
     http://localhost:8080/links (once the crawling is done. you can view the results)
+    
+##code to read:
+
+  UdatabankCrawler.java  -- add/edit the keywords. so you can get to different hexun pages
+  CrawlerDemoController.java -- entry point for the demo. the seed is hardcoded here.
